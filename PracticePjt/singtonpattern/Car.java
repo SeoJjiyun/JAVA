@@ -3,7 +3,7 @@ package singtonpattern;
 public class Car {
 	
 	private int carNum;
-	private static int serialNum = 10000; //staticÀ¸·Î ÇÏÁö ¾ÊÀ¸¸é Â÷ÀÇ serialNum°¡ ¸ğµÎ ÀÏÄ¡ÇÑ´Ù. 
+	private static int serialNum = 10000; //staticìœ¼ë¡œ í•˜ì§€ ì•Šìœ¼ë©´ ì°¨ì˜ serialNumê°€ ëª¨ë‘ ì¼ì¹˜í•œë‹¤. 
 	
 	public Car() {
 		serialNum++;
@@ -17,7 +17,5 @@ public class Car {
 	private void setCarNum(int carNum) {
 		this.carNum = carNum;
 	}
-	
-	
 
 }
