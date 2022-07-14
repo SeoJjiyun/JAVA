@@ -8,11 +8,20 @@ public class Customer { // 고객 속성 : 아이디, 이름, 등급, 보너스 
 	int bonusPoint;
 	double bonusRatio; //package default -> 외부 패키지에서는 사용 불가
 	
-	public Customer() { //기본 정보
+	public Customer() { //기본 정보 & default 생성자
 		
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
 	}
+	/*
+	public Customer(customerID,customerName){ // 이 경우는 default 생성자가 아니므로, VIPCustomer에서 (상위클래스에서 하위클래스로 확장할때,) 명시적으로 호출해야함
+		this.customerID = customerID;
+		this.coustomerName = customerName;
+		
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
+	}
+	*/
 	
 	public int calcPrice(int price) {
 		bonusPoint += price * bonusRatio;
